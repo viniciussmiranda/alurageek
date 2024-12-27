@@ -1,0 +1,267 @@
+/* styles.css */
+
+/* Reset básico */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A148C;;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaçamento entre a imagem e o texto */
+}
+
+.logo img.hearts {
+    width: 72px; /* Ajuste o tamanho conforme necessário */ height: auto; /* Mantém a proporção da imagem */
+}
+
+.logo h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.products-section {
+    width: 65%;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 0.5rem 0;
+}
+
+.product-card button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #e60000;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    background-color: #4A148C;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+
+.add-product {
+    width: 30%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4A148C;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #4a3170;
+}
+
+
+footer {
+    background-color: #4A148C;;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Espaçamento entre a imagem e o texto */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    gap: 0.5rem; /* Espaçamento entre os corações e o texto */
+}
+
+.footer-content img.hearts {
+    width: 72px; /* Ajuste o tamanho para se adequar ao layout */
+    height: auto;
+}
+
+.footer-content p {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .products-section {
+        width: 100%;
+    }
+
+    .add-product {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+/* Para telas menores que 768px (tablets ou celulares em orientação horizontal) */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .add-product {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    form input, form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para telas menores que 480px (smartphones em orientação vertical) */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .product-card h3 {
+        font-size: 14px;
+    }
+
+    .add-product {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    form input, form button {
+        font-size: 1rem;
+    }
+}

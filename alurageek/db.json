@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Stormtrooper",
+      "price": 60,
+      "image": "/public/assets/starwars.svg"
+    },
+    {
+      "id": "2",
+      "name": "Game Boy Classic",
+      "price": 60,
+      "image": "/public/assets/image2.svg"
+    },
+    {
+      "id": "3",
+      "name": "Stormtrooper",
+      "price": 60,
+      "image": "/public/assets/starwars.svg"
+    },
+    {
+      "id": "4",
+      "name": "Game Boy Classic",
+      "price": 60,
+      "image": "/public/assets/image2.svg"
+    },
+    {
+      "id": "5",
+      "name": "Stormtrooper",
+      "price": 60,
+      "image": "/public/assets/starwars.svg"
+    },
+    {
+      "id": "6",
+      "name": "Game Boy Classic",
+      "price": 60,
+      "image": "/public/assets/image2.svg"
+    }
+  ]
+}
